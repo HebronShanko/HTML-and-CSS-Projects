@@ -1,0 +1,25 @@
+h1 {color:blueviolet; 
+  text-align: center;
+
+}
+<style>
+  .font_1 {
+    background-color: black;
+    color:yellow;
+    font-size: large;
+  }
+  .font_2 {
+    background-color: darkblue;
+    color: white;
+    font-size: medium;
+  }
+
+  <style>
+    .My_Style {
+      background-color: blueviolet;
+      color: burlywood;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: small;
+    }
+  <style>  
