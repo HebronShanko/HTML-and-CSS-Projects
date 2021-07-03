@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>SSW Project</title>
+  <link rel="stylesheet" href="./css/animation.css"
+  <link rel="stylesheet" href="./css/shared.css"
 </head>
 <body>
   <!--NAV-->
   <div class="wrap"> 
     <div class="menu-container">
       <ul class="menu">
-        <a href="#home"><li>Home</li></a>
-        <a href="#gallery"><li>Gallery</li></a>
-        <a href="#reservation"><li>Reservation</li></a>
+        <a href="#home"><li>HOME</li></a>
+        <a href="#gallery"><li>GALLERY</li></a>
+        <a href="#reservation"><li>RESERVATION</li></a>
       </ul>
     </div>
   </div>
@@ -20,7 +22,7 @@
     <div id="home">
       <div class="container">
         <div class="text-center">
-          <span class="head main">The Space Station</span>
+          <span class="head-main">The Space Station</span>
         </div>  
       </div>
     </div>
@@ -29,7 +31,7 @@
   <section id="gallery">
     <div class="container">
       <h1>Gallary</h1>
-      <div class="flex contianer"></div>
+      <div class="flex-contianer"></div>
 
     <!--photo container1-->
         <div class="photo-container">
@@ -138,21 +140,21 @@
     </div>
 </div>
 <!--End of container-->
-  </section>  
-  <section>
-    <div id="reservation"> 
-      <div>
-        <h1>Reservation</h1>
-        <div>
-          <h2><span>Incredible Games on TODAY</span></h2><br><h3>Book TODAY</h3>
-          <p>Reservetion starts Today</p>
-          <div>
+<!--RSVP-->
+   
+  <section id="contact">
+    <div class="cntainer"> 
+      <div class="heading-padding">
+        <h1 class="heading-padding">Reservation</h1>
+        <div class="reservation">
+          <h2><span>Incredible Games on TODAY</span><br>Book TODAY</h2>
+          <p class="rsvp-text">Reservetion starts Today</p>
+          <div class="form-rsvp">
             <form action="" method="POST">
-              <input class=rsvp type="text" value="firstname">
-              <input class=rsvp type="text" value="lastname">
-              <input class=rsvp type="text" value=email>
-              <input class=rsvp type="text" value="phonenumber">
-              <div class="form:spacer"> 
+              <input class=rsvp type="text" value="" placeholder="Firstname">
+              <input class=rsvp type="text" value="" placeholder="Lastname">
+              <input class=rsvp type="text" value="" placeholder="Email Adress">
+              <input class=rsvp type="text" value="" placeholder="Phone Number">
                 <label class="terms">The terms and conditions</label>
               </div>
               <div>
@@ -165,10 +167,10 @@
     </div>
   </section>
   <!--Footer-->
-  <section>
-    <div>
-      www.thespacestationwebsiteproject.tech &copy; 2021
+  
+    <div id="footer">
+      www.thespacestationwebsiteproject.tech &nbsp;| &copy; 2021
     </div>
-  </section>
+ 
 </body>
 </html>
