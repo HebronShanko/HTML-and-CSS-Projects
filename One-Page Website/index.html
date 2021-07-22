@@ -18,8 +18,63 @@
 <!--Nav section end-->
 
 <!--Home section start-->
-    <div id="home">
-      <video src="soccer video.mp4" muted loop autoplay></video>
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="img/playing.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="img/soccer-4s.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="img/football.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+  
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/playing.jpg" style="width:100%" height="50%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/soccer-4s.jpeg" style="width:100%" height="50%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/football.jpeg" style="width:100%" height="50%">
+        </div>
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="img/playing.jpg" onclick="currentSlide(1)" alt="playing">
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="img/soccer-4s.jpeg" onclick="currentSlide(2)" alt="Kicking">
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="img/football.jpeg" onclick="currentSlide(3)" alt="sport">
+        </div>
+    
+      </div>
     </div>
     <div class="text">
       <h2>Out of Love</h2>
@@ -53,5 +108,7 @@
    <p>WWW.HOSANNA7V7.COM &copy; 2021</p>
  </footer>
 </div>
+
+<script src="JS/main.js"></script>
 </body>
 </html>
